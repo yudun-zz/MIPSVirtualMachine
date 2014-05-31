@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:background="@drawable/bg" >
+    
+    <Button
+         android:id="@+id/button"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="14dp"
+         android:text="提交" 
+         android:onClick="addtocodelist"/>
+
+    <EditText
+        android:id="@+id/inputcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:background="#FFFFCC"
+        android:ems="10"
+        android:hint="@string/please_input_code"
+        android:textSize="20sp" />
+    
+    <ListView
+        android:id="@+id/Codelistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputcode"
+        android:layout_alignRight="@+id/button"
+        android:layout_below="@+id/button" 
+        android:layout_marginBottom="210dp">
+     </ListView>
+  
+     <ListView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" >
+
+</ListView>
+
+      <Button
+          android:id="@+id/button3"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/button2"
+          android:layout_alignBottom="@+id/button2"
+          android:layout_toRightOf="@+id/button2"
+          android:onClick="Run"
+          android:text="运行" />
+
+      <Button
+          android:id="@+id/button2"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/Codelistview"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="154dp"
+          android:layout_marginLeft="20dp"
+          android:onClick="Step"
+          android:text="单步" />
+
+      <Button
+          android:id="@+id/button4"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/button3"
+          android:layout_alignBottom="@+id/button3"
+          android:layout_toRightOf="@+id/button3"
+          android:onClick="Reset"
+          android:text="重置" />
+
+      <Button
+          android:id="@+id/button1"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/button4"
+          android:layout_alignBottom="@+id/button4"
+          android:layout_toRightOf="@+id/button4"
+          android:onClick="Showdata"
+          android:text="查看数据窗" />
+      
+      <ListView
+          android:id="@+id/Reglistview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/Codelistview"
+          android:layout_alignRight="@+id/Codelistview"
+          android:layout_below="@+id/button3"
+          android:layout_marginBottom="24dp" >
+
+     </ListView>
+    
+</RelativeLayout>

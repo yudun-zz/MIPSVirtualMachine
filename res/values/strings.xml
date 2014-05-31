@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MipsVm</string>
+    <string name="action_settings">设置</string>
+    <string name="exit">退出</string>
+    <string name="please_input_code">请输入mips汇编指令</string>
+    <string name="title_activity_show_screen">屏幕</string>
+    <string name="screentitle">屏幕</string>
+    <string name="title_activity_data_view">数据窗</string>
+    <string name="DataViewTitle">数据窗</string>
+    <string name="please_input_data_addresss">请输入内存起始地址</string>
+    <string name="title_activity_splash">MipsVm</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

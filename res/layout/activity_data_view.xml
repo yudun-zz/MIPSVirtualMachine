@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DataView" >
+
+    <ListView
+        android:id="@+id/Datalistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/dataaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@+id/button"
+        android:background="#FFFFCC"
+        android:ems="10"
+        android:hint="@string/please_input_data_addresss" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginRight="16dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dataaddress"
+        android:layout_alignBottom="@+id/dataaddress"
+        android:layout_alignRight="@+id/Datalistview"
+        android:text="确定" 
+        android:onClick="showdata"/>
+    
+</RelativeLayout>
